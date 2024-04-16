@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <h1>Job Application Form <span>(Web)</span></h1>
+        <form
+          method="POST"
+          name="contact"
+          data-netlify="true"
+          onSubmit="submit"
+        >
+          <div class="form-container">
+            <div class="form-control">
+              <label for="first-name">Enter First Name </label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Enter First Name..."
+                required
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="Last-name">Enter Last Name </label>
+              <input
+                type="text"
+                name="Last-name"
+                id="Last-name"
+                placeholder="Enter Last Name..."
+                required
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="email">Enter Email </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email..."
+                required
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="job-role">Job Role</label>
+              <select name="job-role" id="job-role">
+                <option value="option">Select Role To Apply</option>
+                <option value="Tester">Automation Tester</option>
+                <option value="Developer">Frontend Developer</option>
+                <option value="BA">Business Administration</option>
+                <option value="HR">Human Resource</option>
+              </select>
+            </div>
+
+            <div class="address-control">
+              <label for="address">Enter Your Address</label>
+              <textarea
+                name="address"
+                id="address"
+                rows="4"
+                cols="50"
+                autocomplete="on"
+              >
+                     Enter Your Address
+                </textarea
+              >
+            </div>
+
+            <div class="form-control">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Enter City Name..."
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="pincode">Pincode</label>
+              <input
+                type="number"
+                name="pincode"
+                id="pincode"
+                placeholder="Enter Pincode..."
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="date" />
+            </div>
+
+            <div class="form-control">
+              <label for="upload">Upoad Your CV </label>
+              <input type="file" name="upload" id="upload" />
+            </div>
+          </div>
+          <div class="reset-section">
+            <div class="button-container">
+              <button type="submit">Apply Now</button>
+            </div>
+            <div class="button-container">
+              <button type="reset">Reset</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- <footer>&copy; All Rights Reserved. @2024 Made In Love❤️ ...</footer> -->
+      </div>
+    </div>
+  </body>
+</html>
